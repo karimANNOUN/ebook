@@ -7,7 +7,8 @@ const requestOption = {
     headers: {"content-type":"application/json",Authorization:`Bearer ${Token}`}}
   const response= await fetch(`${process.env.REACT_APP_HOST}/600/users/${cbid}`,requestOption);
   if(!response.ok){
-    throw { message:response.statusText , status:response.status };  // eslint-disable-next-line
+    // eslint-disable-next-line
+    throw { message:response.statusText , status:response.status };  
   }
   const data = await response.json();
    return data
@@ -22,7 +23,8 @@ export async function getUserOrders(){
        headers: {"content-type":"application/json",Authorization:`Bearer ${Token}`},
      })
      if(!response.ok){
-      throw { message:response.statusText , status:response.status };  // eslint-disable-next-line
+      // eslint-disable-next-line
+      throw { message:response.statusText , status:response.status };  
     }
      const data = await response.json()
      return data
@@ -51,7 +53,8 @@ export async function createOrder(CardList,total,user){
         body:JSON.stringify(order)
       })
       if(!response.ok){
-        throw { message:response.statusText , status:response.status }; // eslint-disable-next-line
+        // eslint-disable-next-line
+        throw { message:response.statusText , status:response.status }; 
       }
       const data = await response.json()
       return data
