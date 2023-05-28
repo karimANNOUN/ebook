@@ -577,7 +577,32 @@
       "best_seller": true
     }
   ],
-  "orders": [],
+  "orders": [
+    {
+      "CardList": [
+        {
+          "id": 1001,
+          "name": "The Great Gatsby",
+          "overview": " Set in the Roaring Twenties, this classic novel explores themes of love, wealth, and the American Dream through the eyes of Jay Gatsby and narrator Nick Carraway.",
+          "long_description": " Unless you are a huge fan of the book’s author, you’re first drawn to a catchy title and cover appeal–a provocative illustration.",
+          "Price": 12,
+          "Poster": "https://images.unsplash.com/photo-1509266272358-7701da638078?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=686&q=80",
+          "Rating": 4,
+          "Size": 320,
+          "in_stock": true,
+          "best_seller": true
+        }
+      ],
+      "amount_paid": 12,
+      "quantity": 1,
+      "user": {
+        "name": "123k",
+        "email": "123k@gmail.com",
+        "id": 1
+      },
+      "id": 1
+    }
+  ],
   "Features_products": [
     {
       "id": 1017,

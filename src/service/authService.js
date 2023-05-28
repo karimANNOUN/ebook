@@ -6,7 +6,7 @@ export async function login(authDetail){
       };
     const response = await fetch(`${process.env.REACT_APP_HOST}/login`,requestOption)
     if(!response.ok){
-      throw {message:response.statusText , status:response.status} // hedoumandirou bihm hundel lel erro ti3na brk
+      throw {message:response.statusText }  // eslint-disable-next-line
     }
     const data = await response.json()
   
@@ -27,7 +27,7 @@ export async function register(authDetail){
       };
     const response = await fetch(`${process.env.REACT_APP_HOST}/register`,requestOption)
     if(!response.ok){
-      throw {message:response.statusText , status:response.status} // hedoumandirou bihm hundel lel erro ti3na brk
+      throw {message:response.statusText }  // eslint-disable-next-line
     }
     const data = await response.json();
     

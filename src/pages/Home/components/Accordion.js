@@ -2,7 +2,6 @@
 import { useState } from 'react';
 
 export const Accordion = ({raq}) => {
-  const {question , answer } = raq
     const [hidden,setHidden]=useState(false);
   
    

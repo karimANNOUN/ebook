@@ -9,8 +9,7 @@ import { toast } from "react-toastify"
 export const DashbordPage = () => {
   const [orders,setOrders]=useState([])
   useTitle("Dashboard ")
-  const Token = JSON.parse(sessionStorage.getItem("token"));
-  const cbid = JSON.parse(sessionStorage.getItem("cbid"));
+  
   
   useEffect(()=>{
     // hadi methode kamla bah ki user ti3na yheb ychri haja yji esmou houwa brk fl checkout

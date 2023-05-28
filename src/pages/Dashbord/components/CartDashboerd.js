@@ -7,7 +7,7 @@ export const CartDashboerd = ({product}) => {
         
         <div className='flex flex-row'>
             <Link to={`/products/${product.id}`} >
-            <img className='w-48 h-32 rounded-l-lg' src={product.Poster} />
+            <img className='w-48 h-32 rounded-l-lg' src={product.Poster} alt='dash' />
             </Link>
             
             <div className='ml-2'> 
