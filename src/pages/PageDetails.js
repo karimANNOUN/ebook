@@ -1,11 +1,12 @@
 import React from 'react'
 import { useState ,useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { toast } from "react-toastify"
 import { Rating } from '../components/Elements/Rating';
 import { useTitle } from '../Hooks/useTitle';
 import { useCard } from '../contex';
 import { getProduct } from '../service';
-import { toast } from "react-toastify"
+
 
 
 export const PageDetails = () => {
