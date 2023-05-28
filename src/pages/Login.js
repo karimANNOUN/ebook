@@ -44,7 +44,7 @@ export const Login = () => {
  
   return (
   
-    <main className='min-h-screen mx-32 mt-20'>
+    <main className='min-h-screen mx-10 mt-20'>
         <h1 className='text-2xl font-bold text-center tracking-normal underline underline-offset-8 dark:text-white mt-12 mb-8 '>Login</h1>
       <form onSubmit={handelLogin}>
   <div className="mb-6 ">

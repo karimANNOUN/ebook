@@ -39,7 +39,7 @@ export const ProductList = () => {
      </section>
 
       <section>
-        <div className="flex flex-row justify-between items-center mx-20 p-4">
+        <div className="flex flex-row justify-around items-center  p-4">
          <span className="text-2xl font-semibold items-center dark:text-slate-100 " >All products ({products.length}) </span>
          <div>
          <label className="relative inline-flex items-center cursor-pointer">
@@ -50,7 +50,7 @@ export const ProductList = () => {
          </div>
         </div>
        
-        <div className="flex flex-wrap justify-center mt-8 mb-12 mx-10">
+        <div className="flex flex-wrap justify-center mt-8 mb-12 mx-5">
         {products.map((product)=>(
          
          <ProductCard key={product.id} product={product} />
