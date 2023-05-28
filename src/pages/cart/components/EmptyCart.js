@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export const EmptyCart = () => {
   return (
-    <section className='w-1/2 h-3/5 mx-auto mt-32 '>
+    <section className='w-2/3 h-3/5 mx-auto mt-32 '>
         
 <div className="w-full p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
     <div><i className="bi bi-cart-plus cursor-pointer text-7xl  dark:text-green-500 " ></i></div>
