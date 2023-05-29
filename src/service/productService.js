@@ -27,3 +27,13 @@ export async function getFeatures(){
     const data = await response.json();
     return data
 }
+
+export async function getSearch(){
+  const response= await fetch(`${process.env.REACT_APP_HOST}/products`) 
+  if(!response.ok){
+    // eslint-disable-next-line
+    throw { message:response.statusText , status:response.status}; 
+  }
+  const data = await response.json();
+  return data
+}

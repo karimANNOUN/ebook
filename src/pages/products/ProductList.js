@@ -17,14 +17,14 @@ export const ProductList = () => {
   const search = useLocation().search; // kifkif tjbdlna wch ktebna f search  m3aha q adika q_react 
   const searchTerm = new URLSearchParams(search).get("q"); // hadi dernaha bah njbdou exact wch ktebna f search 
   useTitle("List")
-
-    
    
     useEffect(()=>{
       async function fetchProducts (){
          try{
           const data = await getProductList(searchTerm)
+
           initialProductList(data) ;//hna pasina data bah nakhdmou baha f use context
+
          }catch(error){
          toast.error(error.message)
          }
@@ -35,7 +35,7 @@ export const ProductList = () => {
   return (
     <main className="min-h-screen">
       <section className='py-7' >
-           <p className='text-3xl text-gray-700 dark:text-white'> {products.length === 0 ? `Not Found for "${searchTerm}"`: ""} </p>
+           <p className='text-3xl text-gray-700 dark:text-white'> {products.length === 0 ? `Not Found for this search`: ""} </p>
      </section>
 
       <section>
