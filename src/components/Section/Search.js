@@ -1,10 +1,9 @@
 import React, { useRef , useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { useTitle } from '../../Hooks/useTitle';
 import { SearchResult } from './SearchResult';
 import { getSearch } from '../../service';
+import { useTitle } from '../../Hooks/useTitle';
 import { toast } from 'react-toastify';
-
 
 export const Search = ({setShow}) => { 
 const [input , setInput]=useState("")
@@ -38,11 +37,6 @@ const handelchange = (value)=>{
     setShow(false)
     return navigate(`/products?q=${searchRef.current.value}`);
   }
-
-  
-
-
-
   return (
     <main>
       
