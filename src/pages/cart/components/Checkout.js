@@ -49,7 +49,7 @@ async function handelSubmit (event){
   return (
     <section>
         
-<form onSubmit={handelSubmit} className="max-w-xl mx-auto mt-10 flex justify-center items-center absolute left-[10%] top-[10%] right-[10%] ">
+<form onSubmit={handelSubmit} className="max-w-xl mx-auto mt-10 flex justify-center items-center absolute left-[10%] top-[7%] right-[10%] ">
   
    
 
