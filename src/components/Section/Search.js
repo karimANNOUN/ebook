@@ -14,23 +14,24 @@ const navigate = useNavigate();
   const searchRef=useRef();
   useTitle("Search")
 
-  
-    async function fetchProduct (value){
-      try{
-       const data= await getSearch()
-       const result = data.filter((curent)=>{
-         return value && curent && curent.name && curent.name.toLowerCase().includes(value)
-       })     
-       setProducts(result)
-      }catch(error){
-        toast.error(error.message)
+      async function fetchProduct (value){
+        try{
+         const data= await getSearch()
+         const result = data.filter((curent)=>{
+           return (value && curent && curent.name  && curent.name.toLowerCase().includes(value)) || (value && curent && curent.name  && curent.name.toUpperCase().includes(value)) || (value && curent && curent.name  && curent.name.includes(value))
+         })     
+         setProducts(result)
+        }catch(error){
+          toast.error(error.message)
+         }
        }
-     }
-
-const handelchange = (value)=>{
-   setInput(value)
-   fetchProduct(value)
-}
+  
+    const handelchange = (value)=>{
+      setInput(value)
+      fetchProduct(value)
+   }
+  
+   
  
   const handelSubmit=(event)=>{
     event.preventDefault()
